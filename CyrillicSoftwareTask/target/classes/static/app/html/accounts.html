@@ -1,0 +1,22 @@
+<div class="row">
+    <div ng-controller="AccountsCtrl" class="col-12">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Customer Name</th>
+                    <th>User Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="a in accounts">
+                    <td>{{a.id}}</td>
+                    <td>{{a.name}}</td>
+                    <td>{{a.customerName}}</td>
+                    <td>{{a.userName}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

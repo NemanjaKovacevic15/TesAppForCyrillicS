@@ -1,0 +1,46 @@
+<div class="row">
+  <div ng-controller="UserPageCtrl" class="row col-12">
+    <div class="col-sm">
+      <table class="table table-striped">
+        <caption style="caption-side: top;">
+          Accounts
+        </caption>
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Customer Name</th>
+            <th>User Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="a in accounts">
+            <td>{{a.id}}</td>
+            <td>{{a.name}}</td>
+            <td>{{a.customerName}}</td>
+            <td>{{a.userName}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm">
+      <table class="table table-striped">
+        <caption style="caption-side: top;">
+          Farms
+        </caption>
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="f in farms">
+            <td>{{f.id}}</td>
+            <td>{{f.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

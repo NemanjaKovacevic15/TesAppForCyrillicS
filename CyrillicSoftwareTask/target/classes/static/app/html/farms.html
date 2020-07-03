@@ -1,0 +1,18 @@
+<div class="row">
+    <div ng-controller="FarmsCtrl" class="col-12">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="f in farms">
+                    <td>{{f.id}}</td>
+                    <td>{{f.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

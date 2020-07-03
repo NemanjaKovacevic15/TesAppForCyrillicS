@@ -1,0 +1,18 @@
+<div class="row">
+    <div ng-controller="UsersCtrl" class="col-12">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="u in users">
+                    <td>{{u.id}}</td>
+                    <td>{{u.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
